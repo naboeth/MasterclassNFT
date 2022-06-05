@@ -1,6 +1,6 @@
 # MasterclassNFT
 
-### This DApp rewards participants of the “Phoenix Guild” masterclasses with an NFT, which later can be used for future masterclasses.
+**This DApp rewards participants of the “Phoenix Guild” masterclasses with an NFT, which later can be used for future masterclasses**
 
 _Screenshot of the DApp._
 
@@ -8,7 +8,7 @@ _Screenshot of the DApp._
 
 The idea of an on-chain CV becomes more and more popular, the unique nature of NFTs allows them to be used as a certification. NFT-diplomas are transparent and less susceptible to counterfeiting and manipulation. Additionally, the certificate can’t get lost or destroyed.
 
-**The idea**
+### The idea
 
 That makes NFTs a suitable tool for our purpose: We chose to implement an NFT-certificate for the TPG-masterclasses. An NFT would be an easy way to verify attendance of the sessions. To make sure, the certification can’t be sold or forwarded to another person, the NFTs are non-transferrable (sometimes referred to as “soul-bound” tokens).
 
@@ -18,21 +18,21 @@ At the same time, the NFTs could have additional advantages linked to it, either
 
 Like this, the NFTs have more than one use case, making sure that loyal participants get rewarded and stay encouraged during their web3 learning-journey. Therefore, the smart contract has to check for the respective NFT when requesting a ticket or a discount.
 
-**A simple walkthrough**
+### A simple walkthrough
 
 1. After attending a masterclass, the participants can go on the DApp website and connect their browser wallet (Meta Mask).
 2. The provided address is checked (participants’ addresses are whitelisted), then a message is displayed if they are eligible for the NFT.
 3. If so, it appears a “minting” button, which triggers the creation of the NFT. The user will have to sign a transaction a pay the gas fee for the minting.
 4. The new NFT is transferred to the connected wallet. Users will see a success message and can watch their (test) NFT on Opensea. The address is no longer whitelisted.
 
-**Resources**
+### Resources
 
 - _Link to the DApp: [https://github.com/naboeth/MasterclassNFT](https://github.com/naboeth/MasterclassNFT)_ (you will have to switch to the ropsten testnet to connect your wallet and have some ropsten test ether, you can get some here: [https://faucet.ropsten.be/](https://faucet.ropsten.be/) or [https://moonborrow.com/](https://moonborrow.com/))
 - _Recorded video using the DApp, in case it doesn’t work for you: [https://www.loom.com/share](https://www.loom.com/share)_
 - _Contract deployed on the ropsten testnet: [https://ropsten.etherscan.io/](https://ropsten.etherscan.io/)_
 - Read more about “The Phoenix guild”: [https://twitter.com/PhoenixGuildHQ](https://twitter.com/PhoenixGuildHQ)
 
-**Future implementations**
+### Future implementations
 
 There are many things in the process that could be added or improved later.
 
@@ -46,7 +46,7 @@ There are many things in the process that could be added or improved later.
 
 - In the current implementation, the address of one masterclass instructor submits the eligible addresses in the contract. Instead, to reduce the degree of centralization, we could link a multi-sig of instructors and mentors of the masterclass.
 
-**How to run the DApps locally (as well as the unit tests)**
+### How to run the DApps locally (as well as the unit tests)
 
 1. Clone the repository
 2. _Install hardhat [https://hardhat.org/tutorial](https://hardhat.org/tutorial)_
