@@ -50,9 +50,11 @@ There are many things in the process that could be added or improved later.
 
 1. Clone the repository
 2. _Install hardhat [https://hardhat.org/tutorial](https://hardhat.org/tutorial)_
-   '''
+
+   ```
    npx hardhat
-   '''
+   ```
+
 3. _Compile and migrate the contracts…_
 4. _Open the "index.html" file with live server…_
 5. _Running unit tests…_
