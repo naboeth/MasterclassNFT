@@ -2,3 +2,5 @@ node_modules
 artifacts
 cache
 solidity-files.json
+.env
+.env

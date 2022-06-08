@@ -3,7 +3,8 @@ const { expect } = require("chai"); //chai is an assertion library
 
 describe("MasterclassNFT", function(){
     it("should return correct name and symbol", async function () {
-        const MasterclassNFT = await hre.ethers.getContractFactory("MasterclassNFT"); //allows to get actual class from contract
+        //const MasterclassNFT = await hre.ethers.getContractFactory("MasterclassNFT"); //allows to get actual class from contract
+        const MasterclassNFT = await hre.ethers.getContractFactory("MasterclassNFTA");
 
         const MasterclassNFTDeployed = await MasterclassNFT.deploy("ThePhoenixGuild", "TPG");
 
