@@ -6,6 +6,7 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   background: #dfdeeb;
+  text-align: center;
 }
 
 /* Header container */
@@ -30,10 +31,10 @@ nav .ourLogo {
   top: 48px;
 }
 
-nav .mintnftbutton {
+nav .connectbutton {
   box-sizing: border-box;
 
-  position: absolute;
+  position: relative;
   width: 250px;
   height: 60px;
   left: 999px;
@@ -44,12 +45,16 @@ nav .mintnftbutton {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
   font-weight: 700;
   font-size: 30px;
-  line-height: 50px;
+  line-height: 55px;
+  text-decoration: none;
 
   color: #ffffff;
 }
+
+/* body */
 
 .information h1 {
   position: absolute;
@@ -95,30 +100,34 @@ nav .mintnftbutton {
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 27px;
   line-height: 35px;
   text-align: center;
 
   color: #000000;
 }
 
+/* minting button and message */
+
 .mintingprocess {
   box-sizing: border-box;
 
   position: absolute;
-  width: 378px;
-  height: 74px;
+  width: 400px;
+  height: 75px;
   left: 551px;
-  top: 731px;
+  top: 670px;
 
   background: #a299c5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
+  text-align: center;
   font-weight: 700;
   font-size: 35px;
   line-height: 70px;
+  text-decoration: none;
 
   color: #ffffff;
 }
@@ -128,12 +137,12 @@ nav .mintnftbutton {
   width: 805px;
   height: 81px;
   left: 337px;
-  top: 850px;
+  top: 800px;
 
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 27px;
   line-height: 35px;
   text-align: center;
 
@@ -148,7 +157,27 @@ nav .mintnftbutton {
   width: 805px;
   height: 81px;
   left: 349px;
-  top: 850px;
+  top: 800px;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #564988;
+
+  /*Show after failed mint*/
+  display: none;
+}
+
+.getaccess p {
+  position: absolute;
+  width: 886px;
+  height: 44px;
+  left: 317px;
+  top: 1050px;
 
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
@@ -157,8 +186,28 @@ nav .mintnftbutton {
   line-height: 35px;
   text-align: center;
 
-  color: #564988;
+  color: #000000;
+}
 
-  /*Show after failed mint*/
-  display: block;
+.getaccess a {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 255px;
+  height: 74px;
+  left: 625px;
+  top: 1115px;
+
+  background: #a299c5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 70px;
+  text-decoration: none;
+
+  color: #ffffff;
 }
