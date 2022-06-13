@@ -11,7 +11,7 @@ module.exports = {
   solidity: "0.8.7",
 };
 
-/* uncomment to deploy on rinkeby testnet
+
 
 // Go to https://www.alchemyapi.io, sign up, create
 // a new App in its dashboard, and replace "KEY" with its key
@@ -26,12 +26,12 @@ const RINKEBY_PRIVATE_KEY = process.env.RINKEBY_PRIVATE_KEY;
 module.exports = {
   solidity: "0.8.7",
   networks: {
-    ropsten: {
-      url: `https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
-      accounts: [`${ROPSTEN_PRIVATE_KEY}`]
+    rinkeby: {
+      url: `https://eth-rinkeby.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
+      accounts: [`${RINKEBY_PRIVATE_KEY}`]
     }
   }
 };
-*/
+
 
 

@@ -22,3 +22,6 @@ main()
         console.error(error);
         process.exit(1);
     });
+
+
+//deployed contract to : 0x03893D4C59810040348AD07ec4c5da7DF18EbD0b
