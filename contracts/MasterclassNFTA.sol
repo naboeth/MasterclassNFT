@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.7;
 
-import "erc721a/contracts/ERC721A.sol"; //fantastic library by Azuki
+import "erc721a/contracts/ERC721A.sol"; //library by Azuki to optimize gas consumption of ERC721A
 
 import "hardhat/console.sol"; //useful for debugging
 
