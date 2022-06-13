@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Masterclass-NFT</title>
     <link rel="stylesheet" href="style.css" />
+    <script src='node_modules/web3/dist/web3.min.js'></script> 
   </head>
 
   <body>
-    <script src="app.js"></script>
-    <script>import Web3 from ‘web3’;</script>
+    
     <div class="nav-container">
         <nav>
           <div class="logo">
@@ -20,7 +20,7 @@
             <a href="#">
               <img class="ourLogo" src="pictures/chain.svg" alt="" />
             </a>
-              <a class="connectbutton" href="#">Connect Wallet</a>
+              <a class="connectbutton" onclick = "load();" href="#">Connect Wallet</a>
           </ul>
           
         </nav>
@@ -39,7 +39,7 @@
     <div>
       
     <div class="mintingprocess">
-      <a href="#">Mint Masterclass NFT</a>
+      <a href="#" onclick="mintNFT();" >Mint Masterclass NFT</a>
     </div>
 
     <div class="mintingmessage">
@@ -58,6 +58,6 @@
      </div> 
 
     </div>   
-
+    <script src="app.js"></script>
   </body>
 </html>
