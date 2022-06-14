@@ -2,7 +2,7 @@
 
 **This DApp rewards participants of the “Phoenix Guild” masterclasses with an NFT, which later can be used for future masterclasses**
 
-_Screenshot of the DApp._
+![Screenshot of the front-end](hhttps://github.com/naboeth/MasterclassNFT/blob/master/pictures/Screenshot%20.png)
 
 “The Phoenix Guild” (TPG) is a female blockchain-community, educating womxn in web3 development. This DApp was built as part of a soliditiy bootcamp of TPG. The Phoenix guild is regularly holding “masterclasses” for its community, inviting blockchain developers to provide a workshop about different web3-coding topics.
 
