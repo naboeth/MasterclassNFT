@@ -1,9 +1,7 @@
-//import Web3 from ‘web3’; 
+import MasterclassNFTjson from "./ABIs/MasterclassNFT.json"
+import MasterclassParticipantjson from "./ABIs/MasterclassParticipant.json"
 
-//const MasterclassNFTjson = require('./MasterclassNFT.json');
-import MasterclassNFT from "../ABI/MasterclassNFT.json";
-import MasterclassNFT from "./MasterclassNFT.json";
-
+//initialize ethereum provider 
 async function loadWeb3() {
 	if (window.ethereum) {
 	  window.web3 = new Web3(window.ethereum);
@@ -11,21 +9,25 @@ async function loadWeb3() {
 	}
   }
   
-  async function load() {
+  window.load = async function load() {
 	await loadWeb3();
 	console.log("Connected")
   }
   
-  contractAddress = "0x03893D4C59810040348AD07ec4c5da7DF18EbD0b"
-  
+  const contractAddress = "0x03893D4C59810040348AD07ec4c5da7DF18EbD0b"
+  const contractAddress2 = "0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3"
+  console.log("Transition to load Contract");
+
   async function loadContract() {
+	console.log("Contract loaded");
 	return await new window.web3.eth.Contract(MasterclassNFTjson, contractAddress);
   }
   
-  async function load() {
+  async function loadNFT() {
 	await loadWeb3();
 	window.contract = await loadContract();
-	console.log("Contract loaded");
+	console.log(window.contract);
+	console.log("Contract instance created");
   }
   
    //mint NFT
