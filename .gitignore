@@ -3,3 +3,4 @@ cache
 artifacts
 solidity-files.json
 .env
+build/
