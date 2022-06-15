@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masterclass-NFT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src='node_modules/web3/dist/web3.min.js'></script> 
+  </head>
+
+  <body>
+    
+    <div class="nav-container">
+        <nav>
+          <div class="logo">
+          </div>
+
+          <ul class="nav-items">
+            <a href="#">
+              <img class="ourLogo" src="pictures/logo.jpg" alt="" />
+            </a>
+              <a class="connectbutton" onclick = "load();" href="#">Connect Wallet</a>
+          </ul>
+          
+        </nav>
+      </div>
+
+    <div class="information">
+      <header>
+        <h1>Build your on-chain CV!</h1>
+      <header>
+
+        <h3>This DApp rewards participants of the “Phoenix Guild” 
+         masterclasses with an NFT-certificate.</h3>
+        <p>Check your eligibility for the NFT by connecting the wallet, 
+        whose address you provided during the session (please switch to 
+        rinkeby testnet first). </p>
+    <div>
+      
+    <div class="mintingprocess">
+      <a href="#" onclick="mintNFT();" >Mint Masterclass NFT</a>
+    </div>
+
+    <div class="mintingmessage">
+      <div class="positive">
+        Congrats! Your NFT was successfully created and transferred to your wallet. Check your NFT on Opensea <a href="https://testnets.opensea.io/" target="_blank">here</a>. 
+      </div>
+
+      <div class="negative">Sorry, your address is not whitelisted for the NFT. Did you connect the right account?
+      </div>
+
+     <div class="getaccess">
+      <p>You own a masterclass NFT? Get access to our exclusive content: 
+      </p>
+
+      <a href="https://oauth-app.litgateway.com/google/l/8a6b9bf3-72fc-42f1-86b7-8b111fb56c81">Get access</a>
+     </div> 
+
+    </div>   
+    <script src="app.js"></script>
+  </body>
+</html>
