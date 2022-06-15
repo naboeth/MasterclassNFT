@@ -30,10 +30,10 @@ In this case, we decided to use "Lit Protocol" (a decentralized access control p
 
 ### Resources
 
-- _Link to the DApp: [https://github.com/naboeth/MasterclassNFT](https://github.com/naboeth/MasterclassNFT)_ (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/)
-- _Recorded video using the DApp, in case it doesn’t work for you: [https://www.loom.com/share](https://www.loom.com/share)_
+- _Link to the DApp: [https://github.com/naboeth/MasterclassNFT](https://github.com/naboeth/MasterclassNFT)_ (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
+- _Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share](https://www.loom.com/share)_
 - _Presentation of the idea: ..._
-- _Contracts deployed on the rinkeby testnet: [https://rinkeby.etherscan.io/address/0x03893d4c59810040348ad07ec4c5da7df18ebd0b](0x03893d4c59810040348ad07ec4c5da7df18ebd0b)_
+- _Contracts deployed on the rinkeby testnet: [0x03893d4c59810040348ad07ec4c5da7df18ebd0b](https://rinkeby.etherscan.io/address/0x03893d4c59810040348ad07ec4c5da7df18ebd0b)_
 - Read more about “The Phoenix guild”: [https://twitter.com/PhoenixGuildHQ](https://twitter.com/PhoenixGuildHQ)
 
 ### Future implementations
