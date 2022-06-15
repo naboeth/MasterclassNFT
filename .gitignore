@@ -1,1 +1,4 @@
 node_modules
+artifacts
+solidity-files-cache.json
+.env

@@ -9,9 +9,11 @@ async function loadWeb3() {
 	}
   }
   
-  window.load = async function load() {
+  window.load = async () => {
 	await loadWeb3();
-	console.log("Connected")
+	window.contract = await loadContract();
+	console.log(window.contract);
+	console.log("Contract instance created");
   }
   
   const contractAddress = "0x03893D4C59810040348AD07ec4c5da7DF18EbD0b"
@@ -23,13 +25,7 @@ async function loadWeb3() {
 	return await new window.web3.eth.Contract(MasterclassNFTjson, contractAddress);
   }
   
-  async function loadNFT() {
-	await loadWeb3();
-	window.contract = await loadContract();
-	console.log(window.contract);
-	console.log("Contract instance created");
-  }
-  
+
    //mint NFT
   async function getCurrentAccount() {
 	  const accounts = await window.web3.eth.getAccounts();
@@ -37,9 +33,20 @@ async function loadWeb3() {
 	  return accounts[0];
 	}
 	
-  async function mintNFT() {
+  window.mintNFT = async () => {
 	  const participant = await getCurrentAccount();
+	  console.log("Participant", participant);
 	  console.log("Fetched Address of Participant");
+	  window.participantContract = await new window.web3.eth.Contract(MasterclassParticipantjson, contractAddress2);
+	  const val = participantContract.methods.isParticipant();
+	  //emit an event
+
+	  console.log(result);
+	  const vals = true;
+	  if (vals === true) {
+		console.log("is Participant check results ",val);
+	  }	
+	  console.log("check failed");
 	  const mint = await window.contract.methods.mint(1).send({from: participant});
 	  console.log("mint succeeded");
   }
