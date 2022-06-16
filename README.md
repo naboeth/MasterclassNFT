@@ -30,7 +30,7 @@ In this case, we decided to use "Lit Protocol" (a decentralized access control p
 
 ### Resources
 
-- _Link to the DApp: [https://github.com/naboeth/MasterclassNFT](https://github.com/naboeth/MasterclassNFT)_ (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
+- _Link to the DApp hosted on Github Pages: [https://naboeth.github.io/MasterclassNFT/](https://naboeth.github.io/MasterclassNFT/)_ (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
 - _Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share](https://www.loom.com/share)_
 - _Presentation of the idea: ..._
 - _Contracts deployed on the rinkeby testnet: MasterclassNFT [0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3](https://rinkeby.etherscan.io/address/0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3)_
@@ -54,7 +54,7 @@ There are many things in the process that could be added or improved later.
 
 ### How to run the DApps locally (as well as the unit tests)
 
-1. Clone the repository
+1. _Clone the repository
 2. _Run hardhat [https://hardhat.org/tutorial](https://hardhat.org/tutorial)_
 
    ```
