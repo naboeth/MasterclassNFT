@@ -34,7 +34,6 @@ In this case, we decided to use "Lit Protocol" (a decentralized access control p
 - _Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share](https://www.loom.com/share)_
 - _Presentation of the idea: ..._
 - _Contracts deployed on the rinkeby testnet: MasterclassNFT [0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3](https://rinkeby.etherscan.io/address/0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3)_
-_MasterclassParticipant_ [0x03893d4c59810040348ad07ec4c5da7df18ebd0b](https://rinkeby.etherscan.io/address/0x03893d4c59810040348ad07ec4c5da7df18ebd0b)
 - Read more about “The Phoenix guild”: [https://twitter.com/PhoenixGuildHQ](https://twitter.com/PhoenixGuildHQ)
 
 ### Future implementations
@@ -64,10 +63,10 @@ There are many things in the process that could be added or improved later.
 3. _Compile and deploy the contracts_
    ```
    npx hardhat compile
-   npx hardhat run scripts/deploy.js --network localhost
+   npx hardhat run scripts/deploy.js
    ```
-4. _Open the "index.html" file with live server in VSCode (instasll plugin if neccessary)_
-5. _Running unit tests…_
+4. _Open the "index.html" file with live server in VSCode (install plugin if neccessary)_
+5. _Running unit tests_
    ```
    npx hardhat test
    ```
