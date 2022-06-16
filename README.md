@@ -1,6 +1,6 @@
 # MasterclassNFT
 
-**This DApp rewards participants of the “Phoenix Guild” masterclasses with an NFT, which later can be used for future masterclasses**
+**This DApp rewards participants of the “Phoenix Guild” masterclasses with an NFT, which later can be used to access exclusive content.**
 
 ![Screenshot of the front-end](https://github.com/naboeth/MasterclassNFT/blob/master/pictures/Screenshot%20.png)
 
@@ -25,23 +25,24 @@ In this case, we decided to use "Lit Protocol" (a decentralized access control p
 1. After attending a masterclass, the participants can go on the DApp website and connect their browser wallet (Meta Mask).
 2. The provided address is checked (participants’ addresses are whitelisted), then a message is displayed if they are eligible for the NFT.
 3. If so, it appears a “minting” button, which triggers the creation of the NFT. The user will have to sign a transaction a pay the gas fee for the minting.
-4. The new NFT is transferred to the connected wallet. Users will see a success message and can watch their (test) NFT on Opensea. The address is no longer whitelisted.
+4. The new NFT is transferred to the connected wallet. The address is no longer whitelisted.
 5. Then, the new NFT owner can access exclusive resources by clicking the "get access" button. They will be redirected to the Lit Protocol and have to connect their wallet to see restricted content.
 
 ### Resources
 
-- _Link to the DApp: [https://github.com/naboeth/MasterclassNFT](https://github.com/naboeth/MasterclassNFT)_ (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
-- _Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share](https://www.loom.com/share)_
-- _Presentation of the idea: ..._
-- _Contracts deployed on the rinkeby testnet: MasterclassNFT [0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3](https://rinkeby.etherscan.io/address/0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3)_
-_MasterclassParticipant_ [0x03893d4c59810040348ad07ec4c5da7df18ebd0b](https://rinkeby.etherscan.io/address/0x03893d4c59810040348ad07ec4c5da7df18ebd0b)
+- Link to the DApp: [https://naboeth.github.io/MasterclassNFT/](https://naboeth.github.io/MasterclassNFT/) (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
+- Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share/a8bfd998254a466d9c6053e317333f34](https://www.loom.com/share/a8bfd998254a466d9c6053e317333f34)
+- Presentation of the idea: [https://drive.google.com/file/d/1VAnb4NOcIe5obidLiYB95jUktBBJWDaw/view?usp=sharing](https://drive.google.com/file/d/1VAnb4NOcIe5obidLiYB95jUktBBJWDaw/view?usp=sharing)
+- Contracts deployed on the rinkeby testnet: [0x03893d4c59810040348ad07ec4c5da7df18ebd0b](https://rinkeby.etherscan.io/address/0x03893d4c59810040348ad07ec4c5da7df18ebd0b) and [0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3](https://rinkeby.etherscan.io/address/0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3)
 - Read more about “The Phoenix guild”: [https://twitter.com/PhoenixGuildHQ](https://twitter.com/PhoenixGuildHQ)
 
 ### Future implementations
 
 There are many things in the process that could be added or improved later.
 
-- One of the first steps would be to connect the NFT to a picture on IPFS, so it has a visible representation. Then, we would implement a message in case of a successful mint, leading to the NFT on rinkeby-opensea.
+- We didn't manage to implement the whitelisting-functionality correctly (so just addresses added by an admin of the masterclasses can mint), due to difficulties to embed the ABI of the "MasterclassParticipant"-contract. This would be the first thing to fix.
+
+- One of the first additional steps would be to connect the NFT to a picture on IPFS, so it has a visible representation. Then, we would implement a message with a link in case of a successful mint, leading to the NFT on rinkeby-opensea.
 
 - Our original idea was to implement dynamic NFTs (sort of “upgradeable” NFTs using Chainlink Keepers) to show the participation in TPG masterclasses & bootcamps, so every time a masterclass was attended, the NFT picture would evolve, for example in form of a rising phoenix. Because of the difficulty level, we didn’t realize this (yet).
 
@@ -55,19 +56,20 @@ There are many things in the process that could be added or improved later.
 
 ### How to run the DApps locally (as well as the unit tests)
 
-1. Clone the repository
+1. _Clone the repository_
 2. _Run hardhat [https://hardhat.org/tutorial](https://hardhat.org/tutorial)_
 
    ```
    npx hardhat
    ```
+
 3. _Compile and deploy the contracts_
    ```
    npx hardhat compile
-   npx hardhat run scripts/deploy.js --network localhost
+   npx hardhat run scripts/deploy.js
    ```
-4. _Open the "index.html" file with live server in VSCode (instasll plugin if neccessary)_
-5. _Running unit tests…_
+4. _Open the "index.html" file with live server in VSCode (install plugin if neccessary)_
+5. _Running unit tests_
    ```
    npx hardhat test
    ```
