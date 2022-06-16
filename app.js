@@ -491,11 +491,11 @@ async function loadWeb3() {
 	  console.log("mint succeeded");
   }
   
-if (/** Tokenmint successful*/ false) {
-  window.document.getElementsByClassName("positive").style.display = "block";
-} else {
-  window.document.getElementsByClassName("negative").style.display = "block";
-}
+// if (/** Tokenmint successful*/ false) {
+//   window.document.getElementsByClassName("positive").style.display = "block";
+// } else {
+//   window.document.getElementsByClassName("negative").style.display = "block";
+// }
 
 
 
