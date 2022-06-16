@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background: #dfdeeb;
+  text-align: center;
+}
+
+/* Header container */
+
+.nav-container {
+  background: #b0b3c2;
+  height: 149px;
+  /*  margin-top: -65px;
+  z-index: 500; */
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav .ourLogo {
+  position: absolute;
+  width: 363px;
+  height: 100px;
+  left: 53px;
+  top: 25px;
+}
+
+nav .connectbutton {
+  box-sizing: border-box;
+
+  position: relative;
+  width: 250px;
+  height: 60px;
+  left: 999px;
+  top: 39px;
+  padding: 4px;
+
+  background: #a299c5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 55px;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+/* body */
+
+.information h1 {
+  position: absolute;
+  width: 903px;
+  height: 100px;
+  left: 300px;
+  top: 212px;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.information h3 {
+  position: absolute;
+  width: 903px;
+  height: 100px;
+  left: 288px;
+  top: 361px;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 47px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.information p {
+  position: absolute;
+  width: 886px;
+  height: 106px;
+  left: 309px;
+  top: 537px;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #000000;
+}
+
+/* minting button and message */
+
+.mintingprocess {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 400px;
+  height: 75px;
+  left: 551px;
+  top: 670px;
+
+  background: #a299c5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 70px;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+.positive {
+  position: absolute;
+  width: 805px;
+  height: 81px;
+  left: 337px;
+  top: 800px;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #564988;
+
+  /*Show after successful mint*/
+  display: none;
+}
+
+.negative {
+  position: absolute;
+  width: 805px;
+  height: 81px;
+  left: 349px;
+  top: 800px;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #564988;
+
+  /*Show after failed mint*/
+  display: none;
+}
+
+.getaccess p {
+  position: absolute;
+  width: 886px;
+  height: 44px;
+  left: 317px;
+  top: 1050px;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.getaccess a {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 255px;
+  height: 74px;
+  left: 625px;
+  top: 1115px;
+
+  background: #a299c5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 70px;
+  text-decoration: none;
+
+  color: #ffffff;
+}

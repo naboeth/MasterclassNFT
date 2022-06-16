@@ -30,10 +30,17 @@ In this case, we decided to use "Lit Protocol" (a decentralized access control p
 
 ### Resources
 
+<<<<<<< HEAD
 - _Link to the DApp: [https://naboeth.github.io/MasterclassNFT/](https://naboeth.github.io/MasterclassNFT/)_ (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
 - _Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share/a8bfd998254a466d9c6053e317333f34](https://www.loom.com/share/a8bfd998254a466d9c6053e317333f34)_
 - _Presentation of the idea: [https://drive.google.com/file/d/1VAnb4NOcIe5obidLiYB95jUktBBJWDaw/view?usp=sharing] (https://drive.google.com/file/d/1VAnb4NOcIe5obidLiYB95jUktBBJWDaw/view?usp=sharing)_
 - _Contracts deployed on the rinkeby testnet: [0x03893d4c59810040348ad07ec4c5da7df18ebd0b](https://rinkeby.etherscan.io/address/0x03893d4c59810040348ad07ec4c5da7df18ebd0b)_
+=======
+- _Link to the DApp hosted on Github Pages: [https://naboeth.github.io/MasterclassNFT/](https://naboeth.github.io/MasterclassNFT/)_ (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
+- _Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share](https://www.loom.com/share)_
+- _Presentation of the idea: ..._
+- _Contracts deployed on the rinkeby testnet: MasterclassNFT [0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3](https://rinkeby.etherscan.io/address/0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3)_
+>>>>>>> 35efbbe252352de2f3ef4b4b8350d7905960e9d4
 - Read more about “The Phoenix guild”: [https://twitter.com/PhoenixGuildHQ](https://twitter.com/PhoenixGuildHQ)
 
 ### Future implementations
@@ -54,13 +61,19 @@ There are many things in the process that could be added or improved later.
 
 ### How to run the DApps locally (as well as the unit tests)
 
-1. Clone the repository
-2. _Install hardhat [https://hardhat.org/tutorial](https://hardhat.org/tutorial)_
+1. _Clone the repository
+2. _Run hardhat [https://hardhat.org/tutorial](https://hardhat.org/tutorial)_
 
    ```
    npx hardhat
    ```
-
-3. _Compile and migrate the contracts…_
-4. _Open the "index.html" file with live server…_
-5. _Running unit tests…_
+3. _Compile and deploy the contracts_
+   ```
+   npx hardhat compile
+   npx hardhat run scripts/deploy.js
+   ```
+4. _Open the "index.html" file with live server in VSCode (install plugin if neccessary)_
+5. _Running unit tests_
+   ```
+   npx hardhat test
+   ```
