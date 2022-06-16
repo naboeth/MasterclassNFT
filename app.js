@@ -1,17 +1,10 @@
-//import Web3 from ‘web3’; 
-
 async function loadWeb3() {
 	if (window.ethereum) {
 	  window.web3 = new Web3(window.ethereum);
 	  window.ethereum.enable();
 	}
   }
-  
-  async function load() {
-	await loadWeb3();
-	console.log("Connected")
-  }
-  
+
   contractAddress = "0x03893D4C59810040348AD07ec4c5da7DF18EbD0b"
   
   ABI = [
@@ -480,16 +473,17 @@ async function loadWeb3() {
   async function load() {
 	await loadWeb3();
 	window.contract = await loadContract();
-	console.log("Contract loaded");
+	console.log("Contract instance created");
   }
   
-   //mint NFT
+   //get Account address
   async function getCurrentAccount() {
 	  const accounts = await window.web3.eth.getAccounts();
 	  console.log(accounts);
 	  return accounts[0];
 	}
 	
+	//mint Masterclass NFT Token
   async function mintNFT() {
 	  const participant = await getCurrentAccount();
 	  console.log("Fetched Address of Participant");
@@ -497,7 +491,7 @@ async function loadWeb3() {
 	  console.log("mint succeeded");
   }
   
-  // if (/** Tokenmint successful*/ false) {
+// if (/** Tokenmint successful*/ false) {
 //   window.document.getElementsByClassName("positive").style.display = "block";
 // } else {
 //   window.document.getElementsByClassName("negative").style.display = "block";
