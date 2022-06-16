@@ -5,9 +5,7 @@ pragma solidity ^0.8.7;
 contract MasterclassParticipant {
    address owner; 
 
-
    mapping(address => bool) whitelistedAddresses;
-   event checkParticipant(bool result);
 
    constructor() {
        owner = msg.sender;
@@ -28,8 +26,7 @@ contract MasterclassParticipant {
    }
 
     //caller of function 
-   function isParticipant() public isWhitelisted(msg.sender) returns(bool){
-       emit checkParticipant(true);
+   function isParticipant() public view isWhitelisted(msg.sender) returns(bool){
        return(true);
    }
 }
