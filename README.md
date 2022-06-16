@@ -31,23 +31,24 @@ In this case, we decided to use "Lit Protocol" (a decentralized access control p
 ### Resources
 
 <<<<<<< HEAD
+
 - _Link to the DApp: [https://naboeth.github.io/MasterclassNFT/](https://naboeth.github.io/MasterclassNFT/)_ (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
 - _Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share/a8bfd998254a466d9c6053e317333f34](https://www.loom.com/share/a8bfd998254a466d9c6053e317333f34)_
 - _Presentation of the idea: [https://drive.google.com/file/d/1VAnb4NOcIe5obidLiYB95jUktBBJWDaw/view?usp=sharing] (https://drive.google.com/file/d/1VAnb4NOcIe5obidLiYB95jUktBBJWDaw/view?usp=sharing)_
 - _Contracts deployed on the rinkeby testnet: [0x03893d4c59810040348ad07ec4c5da7df18ebd0b](https://rinkeby.etherscan.io/address/0x03893d4c59810040348ad07ec4c5da7df18ebd0b)_
-=======
 - _Link to the DApp hosted on Github Pages: [https://naboeth.github.io/MasterclassNFT/](https://naboeth.github.io/MasterclassNFT/)_ (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
 - _Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share](https://www.loom.com/share)_
 - _Presentation of the idea: ..._
-- _Contracts deployed on the rinkeby testnet: MasterclassNFT [0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3](https://rinkeby.etherscan.io/address/0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3)_
->>>>>>> 35efbbe252352de2f3ef4b4b8350d7905960e9d4
+- _Contracts deployed on the rinkeby testnet: MasterclassNFT [0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3](https://rinkeby.etherscan.io/address/0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3) and [0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3] (https://rinkeby.etherscan.io/address/0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3)_
 - Read more about “The Phoenix guild”: [https://twitter.com/PhoenixGuildHQ](https://twitter.com/PhoenixGuildHQ)
 
 ### Future implementations
 
 There are many things in the process that could be added or improved later.
 
-- One of the first steps would be to connect the NFT to a picture on IPFS, so it has a visible representation. Then, we would implement a message with a link in case of a successful mint, leading to the NFT on rinkeby-opensea.
+- We didn't manage to implement the whitelisting-functionality correctly (so just addresses added by an admin of the masterclasses can mint), due to difficulties to embed the ABI of the "MasterclassParticipant"-contract. This would be the first thing to fix.
+
+- One of the first additional steps would be to connect the NFT to a picture on IPFS, so it has a visible representation. Then, we would implement a message with a link in case of a successful mint, leading to the NFT on rinkeby-opensea.
 
 - Our original idea was to implement dynamic NFTs (sort of “upgradeable” NFTs using Chainlink Keepers) to show the participation in TPG masterclasses & bootcamps, so every time a masterclass was attended, the NFT picture would evolve, for example in form of a rising phoenix. Because of the difficulty level, we didn’t realize this (yet).
 
@@ -61,12 +62,13 @@ There are many things in the process that could be added or improved later.
 
 ### How to run the DApps locally (as well as the unit tests)
 
-1. _Clone the repository
+1. \_Clone the repository
 2. _Run hardhat [https://hardhat.org/tutorial](https://hardhat.org/tutorial)_
 
    ```
    npx hardhat
    ```
+
 3. _Compile and deploy the contracts_
    ```
    npx hardhat compile
