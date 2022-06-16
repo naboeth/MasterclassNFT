@@ -3,12 +3,13 @@
 pragma solidity ^0.8.7;
 
 contract MasterclassParticipant {
-   address owner; 
+   address public owner; 
 
    mapping(address => bool) whitelistedAddresses;
 
    constructor() {
        owner = msg.sender;
+       
    }
 
    modifier onlyOwner(){
