@@ -30,13 +30,10 @@ In this case, we decided to use "Lit Protocol" (a decentralized access control p
 
 ### Resources
 
-<<<<<<< HEAD
-
-- _Link to the DApp: [https://naboeth.github.io/MasterclassNFT/](https://naboeth.github.io/MasterclassNFT/)_ (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
-- _Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share/a8bfd998254a466d9c6053e317333f34](https://www.loom.com/share/a8bfd998254a466d9c6053e317333f34)_
-- _Presentation of the idea: [https://drive.google.com/file/d/1VAnb4NOcIe5obidLiYB95jUktBBJWDaw/view?usp=sharing] (https://drive.google.com/file/d/1VAnb4NOcIe5obidLiYB95jUktBBJWDaw/view?usp=sharing)_
-- _Contracts deployed on the rinkeby testnet: [0x03893d4c59810040348ad07ec4c5da7df18ebd0b](https://rinkeby.etherscan.io/address/0x03893d4c59810040348ad07ec4c5da7df18ebd0b)_
-- _Contracts deployed on the rinkeby testnet: MasterclassNFT [0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3](https://rinkeby.etherscan.io/address/0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3) and [0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3] (https://rinkeby.etherscan.io/address/0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3)_
+- Link to the DApp: [https://naboeth.github.io/MasterclassNFT/](https://naboeth.github.io/MasterclassNFT/) (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
+- Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share/a8bfd998254a466d9c6053e317333f34](https://www.loom.com/share/a8bfd998254a466d9c6053e317333f34)
+- Presentation of the idea: [https://drive.google.com/file/d/1VAnb4NOcIe5obidLiYB95jUktBBJWDaw/view?usp=sharing] (https://drive.google.com/file/d/1VAnb4NOcIe5obidLiYB95jUktBBJWDaw/view?usp=sharing)
+- Contracts deployed on the rinkeby testnet: [0x03893d4c59810040348ad07ec4c5da7df18ebd0b](https://rinkeby.etherscan.io/address/0x03893d4c59810040348ad07ec4c5da7df18ebd0b) and [0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3](https://rinkeby.etherscan.io/address/0x2dd6Fb833144BE26419306A7B1E8b29D50cf44A3)
 - Read more about “The Phoenix guild”: [https://twitter.com/PhoenixGuildHQ](https://twitter.com/PhoenixGuildHQ)
 
 ### Future implementations
@@ -59,7 +56,7 @@ There are many things in the process that could be added or improved later.
 
 ### How to run the DApps locally (as well as the unit tests)
 
-1. \_Clone the repository
+1. _Clone the repository_
 2. _Run hardhat [https://hardhat.org/tutorial](https://hardhat.org/tutorial)_
 
    ```
