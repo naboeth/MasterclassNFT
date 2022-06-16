@@ -2,7 +2,7 @@
 
 **This DApp rewards participants of the “Phoenix Guild” masterclasses with an NFT, which later can be used for future masterclasses**
 
-_Screenshot of the DApp._
+![Screenshot of the front-end](https://github.com/naboeth/MasterclassNFT/blob/master/pictures/Screenshot%20.png)
 
 “The Phoenix Guild” (TPG) is a female blockchain-community, educating womxn in web3 development. This DApp was built as part of a soliditiy bootcamp of TPG. The Phoenix guild is regularly holding “masterclasses” for its community, inviting blockchain developers to provide a workshop about different web3-coding topics.
 
@@ -30,14 +30,17 @@ In this case, we decided to use "Lit Protocol" (a decentralized access control p
 
 ### Resources
 
-- _Link to the DApp: [https://github.com/naboeth/MasterclassNFT](https://github.com/naboeth/MasterclassNFT)_ (you will have to switch to the ropsten testnet to connect your wallet and have some ropsten test ether, you can get some here: [https://faucet.ropsten.be/](https://faucet.ropsten.be/) or [https://moonborrow.com/](https://moonborrow.com/))
-- _Recorded video using the DApp, in case it doesn’t work for you: [https://www.loom.com/share](https://www.loom.com/share)_
-- _Contract deployed on the ropsten testnet: [https://ropsten.etherscan.io/](https://ropsten.etherscan.io/)_
+- _Link to the DApp: [https://github.com/naboeth/MasterclassNFT](https://github.com/naboeth/MasterclassNFT)_ (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
+- _Recorded video using the DApp, in case the DApp doesn’t work for you: [https://www.loom.com/share](https://www.loom.com/share)_
+- _Presentation of the idea: ..._
+- _Contracts deployed on the rinkeby testnet: [0x03893d4c59810040348ad07ec4c5da7df18ebd0b](https://rinkeby.etherscan.io/address/0x03893d4c59810040348ad07ec4c5da7df18ebd0b)_
 - Read more about “The Phoenix guild”: [https://twitter.com/PhoenixGuildHQ](https://twitter.com/PhoenixGuildHQ)
 
 ### Future implementations
 
 There are many things in the process that could be added or improved later.
+
+- One of the first steps would be to connect the NFT to a picture on IPFS, so it has a visible representation. Then, we would implement a message in case of a successful mint, leading to the NFT on rinkeby-opensea.
 
 - Our original idea was to implement dynamic NFTs (sort of “upgradeable” NFTs using Chainlink Keepers) to show the participation in TPG masterclasses & bootcamps, so every time a masterclass was attended, the NFT picture would evolve, for example in form of a rising phoenix. Because of the difficulty level, we didn’t realize this (yet).
 
