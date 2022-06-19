@@ -24,7 +24,7 @@ In this case, we decided to use "Lit Protocol" (https://litgateway.com/apps) (a 
 
 1. After attending a masterclass, the participants can go on the DApp website and connect their browser wallet (Meta Mask).
 2. The provided address is checked (participants’ addresses are whitelisted), then a message is displayed if they are eligible for the NFT.
-3. If so, it appears a “minting” button, which triggers the creation of the NFT. The user will have to sign a transaction a pay the gas fee for the minting.
+3. If so, it appears a “minting” button, which triggers the creation of the NFT. The user will have to sign a transaction and pay the gas fee for the minting.
 4. The new NFT is transferred to the connected wallet. The address is no longer whitelisted.
 5. Then, the new NFT owner can access exclusive resources by clicking the "get access" button. They will be redirected to the Lit Protocol and have to connect their wallet to see restricted content.
 
@@ -40,7 +40,7 @@ In this case, we decided to use "Lit Protocol" (https://litgateway.com/apps) (a 
 
 There are many things in the process that could be added or improved later.
 
-- We didn't manage to implement the whitelisting-functionality correctly (so just addresses added by an admin of the masterclasses can mint), due to difficulties to embed the ABI of the "MasterclassParticipant"-contract. This would be the first thing to fix.
+- We didn't manage to implement the whitelisting-functionality correctly (so just addresses added by an admin of the masterclasses can mint), due to difficulties to call return value of isParticipant(). Another idea was to emit an event so the frontend can access the value, however gas fees had to be paid when calling that function (see branch front-end2). This would be the first thing to fix.
 
 - One of the first additional steps would be to connect the NFT to a picture on IPFS, so it has a visible representation. Then, we would implement a message with a link in case of a successful mint, leading to the NFT on rinkeby-opensea.
 
